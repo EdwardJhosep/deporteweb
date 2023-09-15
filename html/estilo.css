@@ -1,0 +1,108 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #dadada;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Ajusta el contenido debajo del encabezado fijo */
+body {
+    padding-top: 100px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido {
+    padding: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #c5abab;
+    color: rgb(51, 48, 48);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Galería de imágenes con texto */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen-con-texto {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen-con-texto img {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imagen-con-texto p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Submenú */
+.submenu ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu ul li {
+    display: block;
+}
+
+.submenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.submenu ul li a:hover {
+    background-color: #f0f0f0;
+}

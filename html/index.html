@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div id="imagen-container">
+            <img src="lo.jpg" alt="Descripción de la imagen" id="encabezado-imagen" />
+        </div>
+        <div id="contenido-header">
+            <h1>Atletismo</h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="submenu">
+                        <a href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="contenido">
+        <h2>Bienvenido a nuestro sitio de atletismo</h2>
+        <p>Explore nuestras últimas noticias y eventos, y manténgase actualizado con los resultados de nuestros atletas.</p>
+    </section>
+    <section class="video-section">
+        <div class="video-container">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/O2shutGxTvc" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>Disfruta de nuestra emocionante competencia de atletismo.</p>
+    </section>
+    
+    
+    
+
+    <section class="galeria">
+        <div class="imagen-con-texto">
+            <img src="https://i1.wp.com/elpoli.pe/wp-content/uploads/2020/06/48481877842_6cccd170c8_k.jpg?fit=2048%2C1310&ssl=1" alt="Imagen 1" />
+            <p>Imagen 1: Descripción de la imagen 1</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="https://atletismoperuano.com/wp-content/uploads/2017/04/Andy-web.jpg" alt="Imagen 2" />
+            <p>Imagen 2: Descripción de la imagen 2</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Estadio_Atl%C3%A9tico_de_la_VIDENA.jpg" alt="Imagen 3" />
+            <p>Imagen 3: Descripción de la imagen 3</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="https://atletismoperuano.com/wp-content/uploads/2020/12/Nacional-de-Mayores-2020-previa1.jpg" alt="Imagen 4" />
+            <p>Imagen 4: Descripción de la imagen 4</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="https://cdn.www.gob.pe/uploads/document/file/2595582/standard_10.12.2021.jpg.jpg" alt="Imagen 5" />
+            <p>Imagen 5: Descripción de la imagen 5</p>
+        </div>
+        <div class="imagen-con-texto">
+            <img src="https://statics.exitosanoticias.pe/2023/04/642e0e01d9970.jpg" alt="Imagen 6" />
+            <p>Imagen 6: Descripción de la imagen 6</p>
+        </div>
+    </section>
+
+    <footer>
+            <div class="footer-contact">
+                <p>Contáctanos: contacto@atletismo.com</p>
+                <p>Síguenos en redes sociales:</p>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Esta función se llama cuando el usuario hace clic en el botón "Cerrar Sesión"
+        function cerrarSesion() {
+            // Realiza las acciones necesarias para cerrar la sesión (por ejemplo, eliminar cookies o datos de sesión)
+            // Redirige al usuario a la página de inicio (index.html)
+            window.location.href = "index.html";
+        }
+        
+        // Evita que el usuario vuelva a la página de cierre de sesión después de cerrar sesión
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+</html>

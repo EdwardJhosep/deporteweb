@@ -1,0 +1,236 @@
+/* estilos.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #dadada;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1px 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+footer {
+    background-color: #c5abab;
+    color: rgb(51, 48, 48);
+    text-align: center;
+    padding: 10px 0;
+}
+#imagen-container {
+    float: left;
+    border: 8px solid transparent; /* Borde transparente */
+    border-image-slice: 1; /* Toma todo el borde para aplicar el gradiente */
+}
+
+#encabezado-imagen {
+    width: 80px; /* Puedes ajustar el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#contenido-header {
+    overflow: hidden;
+}
+/* Estilos para el menú */
+#menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+}
+
+#menu li {
+    margin: 0;
+    margin-right: 20px; /* Añade espaciado entre los elementos del menú */
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+#menu a:hover {
+    color: #ff0000; /* Cambia el color al pasar el mouse (por ejemplo, rojo) */
+}
+
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen-con-texto {
+    width: calc(33.33% - 10px); /* Para tres columnas y margen entre ellas */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen-con-texto img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imagen-con-texto p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagen-con-texto {
+    width: calc(33.33% - 10px); /* Para tres columnas y margen entre ellas */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imagen-con-texto img {
+    width: 300px; /* Establece un ancho específico en píxeles */
+    height: 200px; /* Establece una altura específica en píxeles */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imagen-con-texto p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para el submenú */
+.submenu ul {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute;
+    background-color: #fff; /* Color de fondo del submenú */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para el submenú */
+}
+
+.submenu:hover ul {
+    display: block; /* Muestra el submenú al pasar el mouse por encima del elemento principal */
+}
+
+.submenu ul li {
+    display: block;
+}
+
+.submenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000; /* Color del texto del submenú */
+}
+
+.submenu ul li a:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse por encima del elemento del submenú */
+}
+/* Add these styles for a fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+/* Adjust the content below the fixed header */
+body {
+    padding-top: 100px; /* Add padding to the top of the body to avoid content being covered by the fixed header */
+}
+.video-section {
+    text-align: center;
+}
+
+.video-container {
+    display: inline-block;
+}
+/* Estilos para las publicaciones */
+.publicacion {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Agrega espacio entre las publicaciones */
+}
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.usuario-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.usuario-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.publicacion p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.publicacion img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.acciones-publicacion button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.acciones-publicacion button:hover {
+    background-color: #0056b3;
+}

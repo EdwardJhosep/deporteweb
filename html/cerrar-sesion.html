@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerrar Sesión</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <!-- ... Encabezado y menú de navegación ... -->
+    </header>
+
+    <main class="contenido">
+        <section>
+            <h2>Cerrar Sesión</h2>
+            <p>¿Estás seguro de que deseas cerrar la sesión?</p>
+            
+            <!-- Botón de confirmación "Sí" que establece la variable de sesión -->
+            <a href="index.html" onclick="cerrarSesion();"><button id="cerrar-sesion-btn">Sí</button></a>
+
+            <!-- Botón "No" para cancelar la acción de cierre de sesión -->
+            <a href="editarperfil.html"><button id="cancelar-sesion-btn">No</button></a>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; 2023 BlocUsuarios. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Deshabilitar la navegación hacia atrás
+        history.pushState(null, null, location.href);
+        window.addEventListener('popstate', function (event) {
+            history.pushState(null, null, location.href);
+        });
+    </script>
+    
+</body>
+</html>
+
